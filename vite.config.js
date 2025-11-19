@@ -8,6 +8,11 @@ export default defineConfig({
     port: 3000
   },
   publicDir: 'public',
-  assetsInclude: ['**/*.csv']
+  assetsInclude: ['**/*.csv'],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false
+  }
 })
 
